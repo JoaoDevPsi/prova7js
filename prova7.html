@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 7</title>
+    <style>
+      body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #A9CCE3;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    width: 80%; 
+    margin: 0 auto; 
+    background-color: #F0F0F0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+#clock {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      font-family: sans-serif;
+    }
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Cardápio</a></li>
+            <li><a href="#">Conta</a></li>
+            <li><a href="#">Início</a></li>
+        </ul>
+    </nav>
+
+    <div id="clock"></div>
+
+    <div class="container">
+        
+        <h1>Infinit's Kitchen</h1>
+
+        <input type="number" id="valorConta" placeholder="Valor da conta">
+
+        <select id="qualidadeServico">
+
+            <option value="bom">Bom</option>
+            <option value="regular">Regular</option>
+            <option value="ruim">Ruim</option>
+
+        </select>
+
+        <button onclick="calcularGorjeta()">Calcular Gorjeta</button>
+
+        <p id="resultado"></p>
+
+    </div>
+
+    <script src="prova7.js"></script>
+</body>
+</html>
